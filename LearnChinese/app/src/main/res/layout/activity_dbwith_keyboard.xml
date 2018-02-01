@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="top"
+        android:orientation="horizontal"
+    android:id="@+id/linearLayout">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvCharacterKB"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/Character"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvPinyinKB"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/pinyin"
+                android:textSize="24sp" />
+
+
+            <TextView
+                android:id="@+id/tvTranslationKB"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/translation"
+                android:textSize="24sp" />
+
+
+            <TextView
+                android:id="@+id/tvLectureKB"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/lecture"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/etCharacterKB"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/etPinyinKB"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/etTranslationKB"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/etLectureKB"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSaveAndSnap"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/btnSave"
+        android:layout_toLeftOf="@+id/btnSave"
+        android:layout_toStartOf="@+id/btnSave"
+        android:onClick="onClick"
+        android:text="@string/save_and_snap_again" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="@string/just_save"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/btnSaveAndSnap"
+        android:layout_toLeftOf="@+id/btnSaveAndSnap"
+        android:layout_toStartOf="@+id/btnSaveAndSnap"
+        android:onClick="onClick"
+        android:text="Close app" />
+
+    <Button
+        android:id="@+id/btnActualize"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/btnExit"
+        android:onClick="onClick"
+        android:text="Actualize DB" />
+
+
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="top"
+        android:id="@+id/horizontalLayout"
+        android:orientation="horizontal">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPinyin"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/pinyin"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvSound"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/sound"
+                android:textSize="24sp" />
+
+
+            <TextView
+                android:id="@+id/tvTranslation"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/translation"
+                android:textSize="24sp" />
+
+
+            <TextView
+                android:id="@+id/tvLecture"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/lecture"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/etPinyin"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/etSound"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/etTranslation"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/etLecture"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/horizontalLayout"
+        android:layout_gravity="left"
+        android:layout_marginTop="12dp"
+        android:layout_weight="0"
+        android:src="@mipmap/ic_launcher"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/btnSaveAndSnap"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/btnSave"
+        android:layout_toLeftOf="@+id/btnSave"
+        android:layout_toStartOf="@+id/btnSave"
+        android:onClick="onClick"
+        android:text="@string/save_and_snap_again" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="@string/just_save"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnSave"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnSave"
+        android:layout_marginBottom="14dp"
+        android:onClick="onClick"
+        android:text="Close app" />
+
+
+</RelativeLayout>

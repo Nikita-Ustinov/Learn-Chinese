@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Learn Chinese</string>
+    <string name="title_activity_db">DBActivity</string>
+    <string name="pinyin">Pinyin</string>
+    <string name="lecture">Lecture</string>
+    <string name="translation">Translation</string>
+    <string name="sound">Sound</string>
+    <string name="save_and_snap_again">Save and snap again</string>
+    <string name="just_save">Just save</string>
+    <string name="empty_character_data">Write info about character</string>
+    <string name="delete_DB">Delete Database</string>
+    <string name="Character">Character</string>
+</resources>
